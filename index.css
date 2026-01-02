@@ -1,0 +1,40 @@
+@layer components {
+    /* Container: Decreased from 6xl to 5xl for a tighter look */
+    .services-container {
+        @apply max-w-5xl mx-auto;
+    }
+
+    /* Grid: Two columns with standard gap */
+    .services-grid {
+        @apply grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8;
+    }
+
+    /* Card: Reduced border radius from 3rem to 2rem */
+    .service-card {
+        @apply bg-[#f2f8ff] rounded-[2rem] overflow-hidden flex flex-col;
+    }
+
+    /* Image: Height reduced from 72 to 52 for a compact feel */
+    .card-image {
+        @apply w-full h-52 object-cover;
+    }
+
+    /* Content: Padding reduced from p-10 to p-8 */
+    .card-content {
+        @apply p-8 flex flex-col flex-1;
+    }
+
+    /* Typography: Smaller font sizes to match reduced scale */
+    .card-title {
+        @apply text-xl font-bold text-[#333333] mb-3 leading-tight;
+    }
+
+    .card-description {
+        @apply text-[#94a3b8] text-[14px] leading-relaxed mb-6 flex-1;
+    }
+
+    /* Button: Smaller padding and font size */
+    .btn-primary {
+        @apply bg-[#2b7fff] hover:bg-[#1a6ae5] text-white text-[13px] font-semibold py-2.5 px-6 rounded-xl w-fit transition-colors;
+    }
+}
